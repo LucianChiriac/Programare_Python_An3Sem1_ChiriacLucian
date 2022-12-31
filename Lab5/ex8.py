@@ -56,3 +56,14 @@ def multiply_output(function):
 
 example  = multiply_output(suma)
 print(example(10,20,30))
+
+'''
+c) Write a function called augment_function with two parameters named function and decorators. decorators will be a list of functions which will have the same signature as the previous functions (print_arguments, multiply_output). augment_function will create a new function which 
+is augmented using all the functions in the decorators list.
+Example:
+def add_numbers(a, b):
+    return a + b
+
+decorated_function = augment_function(add_numbers, [print_arguments, multiply_output]) 
+
+x = decorated_function(3, 4)  # this will print: Arguments are: (3, 4), {} and will return (2 * (3 + 4))'''
